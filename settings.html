@@ -1,31 +1,261 @@
-<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><title>Settings | Web Maker - にほんご。</title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta property="og:title" content="Settings | Web Maker - にほんご。"><meta property="og:url"><meta property="og:type" content="article"><link rel="icon" href="https://tr.you84815.space/webmaker/favicon.ico"><link rel="stylesheet" href="./css/main.css"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-106478577-1', 'auto');</script></head><body><div id="container"><header><div class="icon"><a class="no-barba" href="https://tr.you84815.space/"><svg width="16" height="16"><rect width="16" height="16" fill="#e0e0e0"></rect></svg></a></div><div class="navi_toggle" onclick="toggleMenu()"><svg id="menu_close" width="24" height="24" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg><svg id="menu_open" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></div><div class="title">Web Maker - <a class="no-barba" href="https://tr.you84815.space/">にほんご。</a></div></header><div class="navi" id="navi"><ul class="menu"><li><a class="index" href="./index.html">Home</a></li><li><a class="gettingStarted" href="./getting-started.html">Getting Started</a><ul class="hidden" id="navi_gettingStarted"><li><a href="./getting-started.html#what-is-webmaker">Web Makerとは</a></li><li><a href="./getting-started.html#features">特徴</a></li><li><a href="./getting-started.html#installation">インストール</a></li><li><a href="./getting-started.html#starting-webmaker">Web Makerをはじめる</a></li><li><a href="./getting-started.html#your-first-code">最初のコード</a></li></ul></li><li><a class="userInterface" href="./user-interface.html">A look at the user interface</a><ul class="hidden" id="navi_userInterface"><li><a href="./user-interface.html#code-pane">コードペイン</a></li><li><a href="./user-interface.html#preview">プレビュー</a></li><li><a href="./user-interface.html#title">タイトル</a></li><li><a href="./user-interface.html#new-save-open">新規作成/保存/開く</a></li><li><a class="active" href="./user-interface.html#settings">設定</a></li><li><a href="./user-interface.html#changelog">更新履歴</a></li><li><a href="./user-interface.html#layouts">レイアウト</a></li><li><a href="./user-interface.html#download-share">ダウンロード/共有</a></li><li><a href="./user-interface.html#export-import">エクスポート/インポート</a></li><li><a href="./user-interface.html#help-share">ヘルプ/シェア</a></li></ul></li><li><a class="userAccount" href="./user-account.html">User Account</a></li><li><a class="preProcessors" href="./preprocessors.html">Pre-processors</a></li><li><a class="addingExternalLibraries" href="./adding-external-libraries.html">Adding external libraries</a></li><li><a class="keyboardShortcuts" href="./keyboard-shortcuts.html">Keyboard Shortcuts</a></li><li><a class="settings active" href="./settings.html">Settings</a></li><li><a class="other" href="./other.html">Other</a><ul class="hidden" id="navi_other"><li><a href="./other.html#frequently-asked-questions">よくある質問</a></li><li><a href="./other.html#from-the-developer">開発者からのメッセージ</a></li><li><a href="./other.html#lets-talk">コミュニケーション</a></li></ul></li></ul></div><div id="content"><div id="main"><div id="barba-wrapper"><div class="barba-container"><h1>Settings</h1><div id="update_date"><span>更新日: 2018.11.13
-</span></div><p>Coming soon...</p><br><blockquote>上記の通り、公式ドキュメントには当機能の説明がありません。
-このページの説明は当サイトが独自に作成しました。<br>公式ドキュメントに当機能のドキュメントが作成されたら随時更新します。</blockquote><h2>インデント</h2><p>インデントを設定します。</p><img class="setting" data-echo="./img/21.png"><div class="table-box"><table class="my-table"><tr><td class="option">Spaces or Tabs</td><td>インデントをスペースまたはタブで指定することができます。<br>初期値はスペースです。</td></tr><tr><td>Indentation Size</td><td>インデントサイズを指定します。<br>初期値は<code>2</code>です。</td></tr></table></div><br><h2>エディタ</h2><p>エディタの設定を指定することができます。</p><img class="setting" data-echo="./img/22.png"><div class="table-box"><table class="my-table"><tr><td class="option">Default Preprocessors</td><td>デフォルトのプリプロセッサを指定することができます。<br>初期値は<code>HTMl</code>、<code>CSS</code>、<code>JS</code>です。</td></tr><tr><td>Theme</td><td>テーマを指定することができます。<br>初期値は<code>monokai</code>です。</td></tr><tr><td>Font</td><td>フォントを指定することができます。
-<code>Other font from system</code>を選択するとシステムフォントを指定することができます。
-システムフォントはフォント名を入力して指定します。<br>初期値は<code>Fira Code</code>です。</td></tr><tr><td>Font Size</td><td>フォントサイズを指定します。<br>初期値は<code>16</code>です。</td></tr><tr><td>Key bindings</td><td>エディタのキーバインドを指定します。<br>初期値は<code>Sublime</code>です。</td></tr></table></div><br><div class="table-box"><table class="my-table"><tr><td class="option">Line wrap</td><td>テキストの折返し可否を指定します。<br>チェックした場合、コードの桁数がエディタ幅を超えると折り返されます。
-チェックを外した場合、コードの桁数がエディタ幅を超えると横スクロールが表示され、テキストは折り返ししません。<br>初期値は<code>チェック有り</code>です。</td></tr><tr><td>Refresh preview on resize</td><td>プレビューペインをリサイズした場合に、
-プレビューを更新するかどうかを指定します。<br>チェックした場合、プレビューペインをリサイズするとプレビューが更新されます。
-チェックを外した場合、プレビューペインをリサイズしてもプレビューは更新されません。<br>初期値は<code>チェック無し</code>です。</td></tr><tr><td>Auto-complete suggestions</td><td>オートコンプリートを表示するかどうかを指定します。<br>チェックした場合、入力内容に応じてサジェストが表示されます。
-チェックを外した場合、文字を入力してもサジェストは表示されません。<br>初期値は<code>チェック有り</code>です。</td></tr><tr><td>Auto-preview</td><td>オートプレビューを有効にするかどうかを指定します。<br>チェックした場合、自動でプレビューされます。
-チェックを外した場合、自動でプレビューされません。
-画面上部の<code>RUN</code>ボタンを押すとプレビューが表示されます。<br>初期値は<code>チェック有り</code>です。</td></tr><tr><td>Auto-save</td><td>自動保存を有効にするかどうかを指定します。<br>チェックした場合、自動保存されます。
-チェックを外した場合、自動保存されません。<br>初期値は<code>チェック有り</code>です。</td></tr><tr><td>Preserve last written code</td><td>最後に書いたコードを保存するかどうかを指定します。
-保存されたコードはWeb Makerを閉じた後に再度開いた際に表示されます。
-保存していない場合は新規作成として空のペインが表示されます。<br>チェックした場合、保存します。
-チェックを外した場合、保存しません。<br>初期値は<code>チェック有り</code>です。</td></tr><tr><td>Replace new tab page</td><td>新しいタブを開いた際にWeb Makerを起動します。<br>この設定はChrome拡張の場合のみ有効です。<br>チェックした場合、Web Makerを起動します。
-チェックを外した場合、空のタブを表示します。<br>初期値は<code>チェック無し</code>です。</td></tr><tr><td>Preserve console logs</td><td><code>console.log</code>を保持するかどうかを指定します。
-<code>console.log</code>を保持すると、プレビューが更新されるたびにログに追記します。
-<code>console.log</code>を保持しない場合、ログが毎度リセットされます。<br>チェックした場合、ログを追記します。
-チェックを外した場合、ログをリセットして表示します。<br>初期値は<code>チェック有り</code>です。</td></tr><tr><td>Fast/light version</td><td>高速で軽いバージョンを使います。
-モーダル表示時の背景ぼかし等が無効化されます。<br>チェックした場合、有効になります。
-チェックを外した場合、無効になります。<br>初期値は<code>チェック無し</code>です。</td></tr></table></div><br><h2>おもしろ設定</h2><img class="setting" data-echo="./img/23.png"><div class="table-box"><table class="my-table"><tr><td class="option">Code blast!</td><td>文字を打つたびに爆発が起こります。楽しんでください。<br>初期値は<code>チェック無し</code>です。</td></tr><tr><td>Js13kGames Mode</td><td>JS13KGames<sup>*1</sup>でゲームを作りましょう！<br>初期値は<code>チェック無し</code>です。</td></tr></table></div><blockquote>*1 コードゴルフ型のゲーム開発コンペです。
- JavaScriptを使って13KB以内の容量でゲームを作ります。</blockquote><br><h2>高度な設定</h2><img class="setting" data-echo="./img/24.png"><div class="table-box"><table class="my-table"><tr><td class="option">Maximum time allowed in a loop iteration</td><td>ループ処理で許容する最大時間を指定します。
-任意のループ処理が指定された時間を超えてた場合、
-無限ループと判定されループを停止します。
-この設定は無限ループの可能性を判定して無限ループを防ぐために利用します。<br>初期値は<code>1000</code>msです。</td></tr></table></div><br><br><div class="license"><p>&copy; 2016
- Kushagra Gour Released under the <a href="https://github.com/chinchang/web-maker/blob/master/LICENSE">MIT license</a></p><p>このコンテンツはKushagra Gour(chinchang)による<a href="https://webmakerapp.com/docs/">Web Makerドキュメント</a>を翻訳/改変したものです。</p></div></div></div></div></div><footer><span> &copy; <span id="copy_year">2017</span> tobijibu</span></footer></div><noscript id="deferred-styles"><link href="./css/lazy.css" rel="stylesheet"></noscript><script src="./js/main.js" defer></script><script src="./js/echo.min.js"></script><div id="src" hidden></div></body></html>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Settings | Web Maker - にほんご。</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="Settings | Web Maker - にほんご。">
+    <meta property="og:url">
+    <meta property="og:type" content="article">
+    <link rel="icon" href="https://tr.you84815.space/webmaker/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link id="theme_style" rel="stylesheet" type="text/css" href="">
+    <script id="srcTheme" src="./js/toggleTheme.js" data-dir="webmaker"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-106478577-1', 'auto');
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div class="icon"><a class="no-barba" href="https://tr.you84815.space/">
+            <svg width="16" height="16">
+              <rect width="16" height="16" fill="#e0e0e0"></rect>
+            </svg></a></div>
+        <div class="navi_toggle" onclick="toggleMenu()">
+          <svg id="menu_close" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+            <path d="M0 0h24v24H0z" fill="none"></path>
+          </svg>
+          <svg id="menu_open" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+          </svg>
+        </div>
+        <div class="title">Web Maker - <a class="no-barba" href="https://tr.you84815.space/">にほんご。</a></div><span id="toggleTheme">
+          <svg role="img" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z"></path>
+          </svg></span>
+      </header>
+      <div class="navi" id="navi">
+        <ul class="menu">
+          <li><a class="index" href="./index.html">Home</a></li>
+          <li><a class="gettingStarted" href="./getting-started.html">Getting Started</a>
+            <ul class="hidden" id="navi_gettingStarted">
+              <li><a href="./getting-started.html#what-is-webmaker">Web Makerとは</a></li>
+              <li><a href="./getting-started.html#features">特徴</a></li>
+              <li><a href="./getting-started.html#installation">インストール</a></li>
+              <li><a href="./getting-started.html#starting-webmaker">Web Makerをはじめる</a></li>
+              <li><a href="./getting-started.html#your-first-code">最初のコード</a></li>
+            </ul>
+          </li>
+          <li><a class="userInterface" href="./user-interface.html">A look at the user interface</a>
+            <ul class="hidden" id="navi_userInterface">
+              <li><a href="./user-interface.html#code-pane">コードペイン</a></li>
+              <li><a href="./user-interface.html#preview">プレビュー</a></li>
+              <li><a href="./user-interface.html#title">タイトル</a></li>
+              <li><a href="./user-interface.html#new-save-open">新規作成/保存/開く</a></li>
+              <li><a class="active" href="./user-interface.html#settings">設定</a></li>
+              <li><a href="./user-interface.html#changelog">更新履歴</a></li>
+              <li><a href="./user-interface.html#layouts">レイアウト</a></li>
+              <li><a href="./user-interface.html#download-share">ダウンロード/共有</a></li>
+              <li><a href="./user-interface.html#export-import">エクスポート/インポート</a></li>
+              <li><a href="./user-interface.html#help-share">ヘルプ/シェア</a></li>
+            </ul>
+          </li>
+          <li><a class="userAccount" href="./user-account.html">User Account</a></li>
+          <li><a class="preProcessors" href="./preprocessors.html">Pre-processors</a></li>
+          <li><a class="addingExternalLibraries" href="./adding-external-libraries.html">Adding external libraries</a></li>
+          <li><a class="keyboardShortcuts" href="./keyboard-shortcuts.html">Keyboard Shortcuts</a></li>
+          <li><a class="settings active" href="./settings.html">Settings</a></li>
+          <li><a class="other" href="./other.html">Other</a>
+            <ul class="hidden" id="navi_other">
+              <li><a href="./other.html#frequently-asked-questions">よくある質問</a></li>
+              <li><a href="./other.html#from-the-developer">開発者からのメッセージ</a></li>
+              <li><a href="./other.html#lets-talk">コミュニケーション</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="content">
+        <div id="main">
+          <div id="barba-wrapper">
+            <div class="barba-container">
+              <h1>Settings</h1>
+              <div id="update_date"><span>更新日: 2018.11.13
+</span>
+              </div>
+              <p>Coming soon...</p><br>
+              <blockquote>
+                上記の通り、公式ドキュメントには当機能の説明がありません。
+                このページの説明は当サイトが独自に作成しました。<br>公式ドキュメントに当機能のドキュメントが作成されたら随時更新します。
+              </blockquote>
+              <h2>インデント</h2>
+              <p>インデントを設定します。</p><img class="setting" data-echo="./img/21.png">
+              <div class="table-box">
+                <table class="my-table">
+                  <tr>
+                    <td class="option">Spaces or Tabs</td>
+                    <td>インデントをスペースまたはタブで指定することができます。<br>初期値はスペースです。</td>
+                  </tr>
+                  <tr>
+                    <td>Indentation Size</td>
+                    <td>インデントサイズを指定します。<br>初期値は<code>2</code>です。</td>
+                  </tr>
+                </table>
+              </div><br>
+              <h2>エディタ</h2>
+              <p>エディタの設定を指定することができます。</p><img class="setting" data-echo="./img/22.png">
+              <div class="table-box">
+                <table class="my-table">
+                  <tr>
+                    <td class="option">Default Preprocessors</td>
+                    <td>デフォルトのプリプロセッサを指定することができます。<br>初期値は<code>HTMl</code>、<code>CSS</code>、<code>JS</code>です。</td>
+                  </tr>
+                  <tr>
+                    <td>Theme</td>
+                    <td>テーマを指定することができます。<br>初期値は<code>monokai</code>です。</td>
+                  </tr>
+                  <tr>
+                    <td>Font</td>
+                    <td>
+                      フォントを指定することができます。
+                      <code>Other font from system</code>を選択するとシステムフォントを指定することができます。
+                      システムフォントはフォント名を入力して指定します。<br>初期値は<code>Fira Code</code>です。
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Font Size</td>
+                    <td>フォントサイズを指定します。<br>初期値は<code>16</code>です。</td>
+                  </tr>
+                  <tr>
+                    <td>Key bindings</td>
+                    <td>エディタのキーバインドを指定します。<br>初期値は<code>Sublime</code>です。</td>
+                  </tr>
+                </table>
+              </div><br>
+              <div class="table-box">
+                <table class="my-table">
+                  <tr>
+                    <td class="option">Line wrap</td>
+                    <td>テキストの折返し可否を指定します。<br>チェックした場合、コードの桁数がエディタ幅を超えると折り返されます。
+                      チェックを外した場合、コードの桁数がエディタ幅を超えると横スクロールが表示され、テキストは折り返ししません。<br>初期値は<code>チェック有り</code>です。
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Refresh preview on resize</td>
+                    <td>
+                      プレビューペインをリサイズした場合に、
+                      プレビューを更新するかどうかを指定します。<br>チェックした場合、プレビューペインをリサイズするとプレビューが更新されます。
+                      チェックを外した場合、プレビューペインをリサイズしてもプレビューは更新されません。<br>初期値は<code>チェック無し</code>です。
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Auto-complete suggestions</td>
+                    <td>オートコンプリートを表示するかどうかを指定します。<br>チェックした場合、入力内容に応じてサジェストが表示されます。
+                      チェックを外した場合、文字を入力してもサジェストは表示されません。<br>初期値は<code>チェック有り</code>です。
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Auto-preview</td>
+                    <td>オートプレビューを有効にするかどうかを指定します。<br>チェックした場合、自動でプレビューされます。
+                      チェックを外した場合、自動でプレビューされません。
+                      画面上部の<code>RUN</code>ボタンを押すとプレビューが表示されます。<br>初期値は<code>チェック有り</code>です。
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Auto-save</td>
+                    <td>自動保存を有効にするかどうかを指定します。<br>チェックした場合、自動保存されます。
+                      チェックを外した場合、自動保存されません。<br>初期値は<code>チェック有り</code>です。
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Preserve last written code</td>
+                    <td>
+                      最後に書いたコードを保存するかどうかを指定します。
+                      保存されたコードはWeb Makerを閉じた後に再度開いた際に表示されます。
+                      保存していない場合は新規作成として空のペインが表示されます。<br>チェックした場合、保存します。
+                      チェックを外した場合、保存しません。<br>初期値は<code>チェック有り</code>です。
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Replace new tab page</td>
+                    <td>新しいタブを開いた際にWeb Makerを起動します。<br>この設定はChrome拡張の場合のみ有効です。<br>チェックした場合、Web Makerを起動します。
+                      チェックを外した場合、空のタブを表示します。<br>初期値は<code>チェック無し</code>です。
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Preserve console logs</td>
+                    <td><code>console.log</code>を保持するかどうかを指定します。
+                      <code>console.log</code>を保持すると、プレビューが更新されるたびにログに追記します。
+                      <code>console.log</code>を保持しない場合、ログが毎度リセットされます。<br>チェックした場合、ログを追記します。
+                      チェックを外した場合、ログをリセットして表示します。<br>初期値は<code>チェック有り</code>です。
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Fast/light version</td>
+                    <td>
+                      高速で軽いバージョンを使います。
+                      モーダル表示時の背景ぼかし等が無効化されます。<br>チェックした場合、有効になります。
+                      チェックを外した場合、無効になります。<br>初期値は<code>チェック無し</code>です。
+                    </td>
+                  </tr>
+                </table>
+              </div><br>
+              <h2>おもしろ設定</h2><img class="setting" data-echo="./img/23.png">
+              <div class="table-box">
+                <table class="my-table">
+                  <tr>
+                    <td class="option">Code blast!</td>
+                    <td>文字を打つたびに爆発が起こります。楽しんでください。<br>初期値は<code>チェック無し</code>です。</td>
+                  </tr>
+                  <tr>
+                    <td>Js13kGames Mode</td>
+                    <td>JS13KGames<sup>*1</sup>でゲームを作りましょう！<br>初期値は<code>チェック無し</code>です。</td>
+                  </tr>
+                </table>
+              </div>
+              <blockquote>
+                *1 コードゴルフ型のゲーム開発コンペです。
+                 JavaScriptを使って13KB以内の容量でゲームを作ります。
+              </blockquote><br>
+              <h2>高度な設定</h2><img class="setting" data-echo="./img/24.png">
+              <div class="table-box">
+                <table class="my-table">
+                  <tr>
+                    <td class="option">Maximum time allowed in a loop iteration</td>
+                    <td>
+                      ループ処理で許容する最大時間を指定します。
+                      任意のループ処理が指定された時間を超えてた場合、
+                      無限ループと判定されループを停止します。
+                      この設定は無限ループの可能性を判定して無限ループを防ぐために利用します。<br>初期値は<code>1000</code>msです。
+                    </td>
+                  </tr>
+                </table>
+              </div><br><br>
+              <div class="license">
+                <p>
+                  &copy; 2016
+                   Kushagra Gour Released under the <a href="https://github.com/chinchang/web-maker/blob/master/LICENSE">MIT license</a>
+                </p>
+                <p>このコンテンツはKushagra Gour(chinchang)による<a href="https://webmakerapp.com/docs/">Web Makerドキュメント</a>を翻訳/改変したものです。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer><span>&copy; <span id="copy_year">2017</span> tobijibu</span></footer>
+    </div>
+    <noscript id="deferred-styles">
+      <link href="./css/lazy.css" rel="stylesheet">
+    </noscript>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/echo.min.js"></script>
+    <div id="src" hidden></div>
+  </body>
+</html>

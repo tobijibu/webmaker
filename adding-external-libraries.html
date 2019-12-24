@@ -1,13 +1,134 @@
-<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><title>Adding external libraries | Web Maker - にほんご。</title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta property="og:title" content="Adding external libraries | Web Maker - にほんご。"><meta property="og:url"><meta property="og:type" content="article"><link rel="icon" href="https://tr.you84815.space/webmaker/favicon.ico"><link rel="stylesheet" href="./css/main.css"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-106478577-1', 'auto');</script></head><body><div id="container"><header><div class="icon"><a class="no-barba" href="https://tr.you84815.space/"><svg width="16" height="16"><rect width="16" height="16" fill="#e0e0e0"></rect></svg></a></div><div class="navi_toggle" onclick="toggleMenu()"><svg id="menu_close" width="24" height="24" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg><svg id="menu_open" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></div><div class="title">Web Maker - <a class="no-barba" href="https://tr.you84815.space/">にほんご。</a></div></header><div class="navi" id="navi"><ul class="menu"><li><a class="index" href="./index.html">Home</a></li><li><a class="gettingStarted" href="./getting-started.html">Getting Started</a><ul class="hidden" id="navi_gettingStarted"><li><a href="./getting-started.html#what-is-webmaker">Web Makerとは</a></li><li><a href="./getting-started.html#features">特徴</a></li><li><a href="./getting-started.html#installation">インストール</a></li><li><a href="./getting-started.html#starting-webmaker">Web Makerをはじめる</a></li><li><a href="./getting-started.html#your-first-code">最初のコード</a></li></ul></li><li><a class="userInterface" href="./user-interface.html">A look at the user interface</a><ul class="hidden" id="navi_userInterface"><li><a href="./user-interface.html#code-pane">コードペイン</a></li><li><a href="./user-interface.html#preview">プレビュー</a></li><li><a href="./user-interface.html#title">タイトル</a></li><li><a href="./user-interface.html#new-save-open">新規作成/保存/開く</a></li><li><a href="./user-interface.html#settings">設定</a></li><li><a href="./user-interface.html#changelog">更新履歴</a></li><li><a href="./user-interface.html#layouts">レイアウト</a></li><li><a href="./user-interface.html#download-share">ダウンロード/共有</a></li><li><a href="./user-interface.html#export-import">エクスポート/インポート</a></li><li><a href="./user-interface.html#help-share">ヘルプ/シェア</a></li></ul></li><li><a class="userAccount" href="./user-account.html">User Account</a></li><li><a class="preProcessors" href="./preprocessors.html">Pre-processors</a></li><li><a class="addingExternalLibraries active" href="./adding-external-libraries.html">Adding external libraries</a></li><li><a class="keyboardShortcuts" href="./keyboard-shortcuts.html">Keyboard Shortcuts</a></li><li><a class="settings" href="./settings.html">Settings</a></li><li><a class="other" href="./other.html">Other</a><ul class="hidden" id="navi_other"><li><a href="./other.html#frequently-asked-questions">よくある質問</a></li><li><a href="./other.html#from-the-developer">開発者からのメッセージ</a></li><li><a href="./other.html#lets-talk">コミュニケーション</a></li></ul></li></ul></div><div id="content"><div id="main"><div id="barba-wrapper"><div class="barba-container"><h1>Adding external libraries</h1><div id="update_date"><span>更新日: 2018.11.13
-</span></div><p>Coming soon...</p><br><blockquote>上記の通り、公式ドキュメントには当機能の説明がありません。
-このページの説明は当サイトが独自に作成しました。<br>公式ドキュメントに当機能のドキュメントが作成されたら随時更新します。</blockquote><p>CDN等で提供されている外部ライブラリを利用することができます。
-<code>ADD LIBRARY</code>ボタンを押すと、ライブラリ追加モーダルが表示されます。
-ライブラリ追加モーダルでは、ライブラリの検索と、URLを指定してライブラリを追加することができます。</p><p><code>Type here to search libraries</code>にライブラリ名を入力すると、<a href="https://cdnjs.com/" target="_blank" rel="noopener noreferrer">cdnjs</a>に登録されているライブラリを検索することができます。
-検索結果に表示されたライブラリをクリックすると、画面下部のJSライブラリリストにライブラリのURLが追加されます。</p><p>jQueryやVue.js等、よく利用されるライブラリは<code>Choose from popular libraries</code>から選択することもできます。</p><img data-echo="./img/17.png"><p>JS、CSSのライブラリリストは直接URLを指定してライブラリをインポートすることもできます。
-複数のライブラリをインポートする場合は、1行に1つのライブラリのURLを指定します。</p><img data-echo="./img/18.png"><br><h3>ライブラリ指定例</h3><p>以下は<a href="https://threejs.org/" target="_blank" rel="noopener noreferrer">Three.js</a>とGoogle Fontsの<a href="https://fonts.google.com/specimen/Julius+Sans+One" target="_blank" rel="noopener noreferrer">Julius Sans One</a>を読み込んで表示した例です。</p><p><b>ライブラリURL</b><br>JavaScript : https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js<br>CSS : https://fonts.googleapis.com/css?family=Julius+Sans+One</p><img data-echo="./img/19.png"><img data-echo="./img/20.png"><br><div class="license"><p>&copy; 2016
- Kushagra Gour Released under the <a href="https://github.com/chinchang/web-maker/blob/master/LICENSE">MIT license</a></p><p>このコンテンツはKushagra Gour(chinchang)による<a href="https://webmakerapp.com/docs/">Web Makerドキュメント</a>を翻訳/改変したものです。</p></div></div></div></div></div><footer><span> &copy; <span id="copy_year">2017</span> tobijibu</span></footer></div><noscript id="deferred-styles"><link href="./css/lazy.css" rel="stylesheet"></noscript><script src="./js/main.js" defer></script><script src="./js/echo.min.js"></script><div id="src" hidden></div></body></html>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adding external libraries | Web Maker - にほんご。</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="Adding external libraries | Web Maker - にほんご。">
+    <meta property="og:url">
+    <meta property="og:type" content="article">
+    <link rel="icon" href="https://tr.you84815.space/webmaker/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link id="theme_style" rel="stylesheet" type="text/css" href="">
+    <script id="srcTheme" src="./js/toggleTheme.js" data-dir="webmaker"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-106478577-1', 'auto');
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div class="icon"><a class="no-barba" href="https://tr.you84815.space/">
+            <svg width="16" height="16">
+              <rect width="16" height="16" fill="#e0e0e0"></rect>
+            </svg></a></div>
+        <div class="navi_toggle" onclick="toggleMenu()">
+          <svg id="menu_close" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+            <path d="M0 0h24v24H0z" fill="none"></path>
+          </svg>
+          <svg id="menu_open" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+          </svg>
+        </div>
+        <div class="title">Web Maker - <a class="no-barba" href="https://tr.you84815.space/">にほんご。</a></div><span id="toggleTheme">
+          <svg role="img" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z"></path>
+          </svg></span>
+      </header>
+      <div class="navi" id="navi">
+        <ul class="menu">
+          <li><a class="index" href="./index.html">Home</a></li>
+          <li><a class="gettingStarted" href="./getting-started.html">Getting Started</a>
+            <ul class="hidden" id="navi_gettingStarted">
+              <li><a href="./getting-started.html#what-is-webmaker">Web Makerとは</a></li>
+              <li><a href="./getting-started.html#features">特徴</a></li>
+              <li><a href="./getting-started.html#installation">インストール</a></li>
+              <li><a href="./getting-started.html#starting-webmaker">Web Makerをはじめる</a></li>
+              <li><a href="./getting-started.html#your-first-code">最初のコード</a></li>
+            </ul>
+          </li>
+          <li><a class="userInterface" href="./user-interface.html">A look at the user interface</a>
+            <ul class="hidden" id="navi_userInterface">
+              <li><a href="./user-interface.html#code-pane">コードペイン</a></li>
+              <li><a href="./user-interface.html#preview">プレビュー</a></li>
+              <li><a href="./user-interface.html#title">タイトル</a></li>
+              <li><a href="./user-interface.html#new-save-open">新規作成/保存/開く</a></li>
+              <li><a href="./user-interface.html#settings">設定</a></li>
+              <li><a href="./user-interface.html#changelog">更新履歴</a></li>
+              <li><a href="./user-interface.html#layouts">レイアウト</a></li>
+              <li><a href="./user-interface.html#download-share">ダウンロード/共有</a></li>
+              <li><a href="./user-interface.html#export-import">エクスポート/インポート</a></li>
+              <li><a href="./user-interface.html#help-share">ヘルプ/シェア</a></li>
+            </ul>
+          </li>
+          <li><a class="userAccount" href="./user-account.html">User Account</a></li>
+          <li><a class="preProcessors" href="./preprocessors.html">Pre-processors</a></li>
+          <li><a class="addingExternalLibraries active" href="./adding-external-libraries.html">Adding external libraries</a></li>
+          <li><a class="keyboardShortcuts" href="./keyboard-shortcuts.html">Keyboard Shortcuts</a></li>
+          <li><a class="settings" href="./settings.html">Settings</a></li>
+          <li><a class="other" href="./other.html">Other</a>
+            <ul class="hidden" id="navi_other">
+              <li><a href="./other.html#frequently-asked-questions">よくある質問</a></li>
+              <li><a href="./other.html#from-the-developer">開発者からのメッセージ</a></li>
+              <li><a href="./other.html#lets-talk">コミュニケーション</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="content">
+        <div id="main">
+          <div id="barba-wrapper">
+            <div class="barba-container">
+              <h1>Adding external libraries</h1>
+              <div id="update_date"><span>更新日: 2018.11.13
+</span>
+              </div>
+              <p>Coming soon...</p><br>
+              <blockquote>
+                上記の通り、公式ドキュメントには当機能の説明がありません。
+                このページの説明は当サイトが独自に作成しました。<br>公式ドキュメントに当機能のドキュメントが作成されたら随時更新します。
+              </blockquote>
+              <p>
+                CDN等で提供されている外部ライブラリを利用することができます。
+                <code>ADD LIBRARY</code>ボタンを押すと、ライブラリ追加モーダルが表示されます。
+                ライブラリ追加モーダルでは、ライブラリの検索と、URLを指定してライブラリを追加することができます。
+              </p>
+              <p><code>Type here to search libraries</code>にライブラリ名を入力すると、<a href="https://cdnjs.com/" target="_blank" rel="noopener noreferrer">cdnjs</a>に登録されているライブラリを検索することができます。
+                検索結果に表示されたライブラリをクリックすると、画面下部のJSライブラリリストにライブラリのURLが追加されます。
+              </p>
+              <p>jQueryやVue.js等、よく利用されるライブラリは<code>Choose from popular libraries</code>から選択することもできます。</p><img data-echo="./img/17.png">
+              <p>
+                JS、CSSのライブラリリストは直接URLを指定してライブラリをインポートすることもできます。
+                複数のライブラリをインポートする場合は、1行に1つのライブラリのURLを指定します。
+              </p><img data-echo="./img/18.png"><br>
+              <h3>ライブラリ指定例</h3>
+              <p>以下は<a href="https://threejs.org/" target="_blank" rel="noopener noreferrer">Three.js</a>とGoogle Fontsの<a href="https://fonts.google.com/specimen/Julius+Sans+One" target="_blank" rel="noopener noreferrer">Julius Sans One</a>を読み込んで表示した例です。</p>
+              <p><b>ライブラリURL</b><br>JavaScript : https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js<br>CSS : https://fonts.googleapis.com/css?family=Julius+Sans+One</p><img data-echo="./img/19.png"><img data-echo="./img/20.png"><br>
+              <div class="license">
+                <p>
+                  &copy; 2016
+                   Kushagra Gour Released under the <a href="https://github.com/chinchang/web-maker/blob/master/LICENSE">MIT license</a>
+                </p>
+                <p>このコンテンツはKushagra Gour(chinchang)による<a href="https://webmakerapp.com/docs/">Web Makerドキュメント</a>を翻訳/改変したものです。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer><span>&copy; <span id="copy_year">2017</span> tobijibu</span></footer>
+    </div>
+    <noscript id="deferred-styles">
+      <link href="./css/lazy.css" rel="stylesheet">
+    </noscript>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/echo.min.js"></script>
+    <div id="src" hidden></div>
+  </body>
+</html>
